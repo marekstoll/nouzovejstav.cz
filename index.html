@@ -216,7 +216,13 @@
       overflow: hidden;
     }
 
-    .member-card::after {
+    .member-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .member-card:empty::after {
       content: "FOTKA";
       position: absolute;
       inset: 0;
@@ -281,7 +287,13 @@
       position: relative;
     }
 
-    .gallery-item::after {
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-item:empty::after {
       content: "GALERIE";
       position: absolute;
       inset: 0;
@@ -356,7 +368,7 @@
   <header class="hero" id="home">
     <!-- Sem dej svoje úvodní video: assets/intro.mp4. Muted je nutné kvůli autoplay v prohlížečích. -->
     <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
-      <source src="assets/intro.mp4" type="video/mp4" />
+      <source src="images/video%20nouzak.mp4" type="video/mp4" />
     </video>
     <div class="video-fallback" aria-hidden="true"></div>
 
@@ -388,13 +400,13 @@
 
     <section class="photo-strip" aria-label="Členové kapely">
       <div class="wrap members">
-        <div class="member-card" style="--x: 24px; --y: -50px"></div>
-        <div class="member-card" style="--x: -10px; --y: 62px"></div>
-        <div class="member-card" style="--x: 16px; --y: -68px"></div>
-        <div class="member-card" style="--x: -12px; --y: 58px"></div>
-        <div class="member-card" style="--x: 10px; --y: -52px"></div>
-        <div class="member-card" style="--x: -22px; --y: 62px"></div>
-        <div class="member-card" style="--x: -34px; --y: -44px"></div>
+        <div class="member-card" style="--x: 24px; --y: -50px"><img src="images/Dianka.jpg" alt="Dianka"></div>
+        <div class="member-card" style="--x: -10px; --y: 62px"><img src="images/fanda.jpg" alt="Fanda"></div>
+        <div class="member-card" style="--x: 16px; --y: -68px"><img src="images/marek.JPG" alt="Marek"></div>
+        <div class="member-card" style="--x: -12px; --y: 58px"><img src="images/radek.jpg" alt="Radek"></div>
+        <div class="member-card" style="--x: 10px; --y: -52px"><img src="images/karel.JPG" alt="Karel"></div>
+        <div class="member-card" style="--x: -22px; --y: 62px"><img src="images/Tedik.JPG" alt="Tedík"></div>
+        <div class="member-card" style="--x: -34px; --y: -44px"><img src="images/Ted.JPG" alt="Ted"></div>
       </div>
     </section>
 
@@ -415,11 +427,11 @@
           
         </div>
         <div class="gallery-grid">
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
-          <div class="gallery-item"></div>
+          <div class="gallery-item"><img src="images/teambuilding%201.jpg" alt="Teambuilding"></div>
+          <div class="gallery-item"><img src="images/Kapelos.JPG" alt="Kapela"></div>
+          <div class="gallery-item"><img src="images/teambuilding%203.jpg" alt="Teambuilding"></div>
+          <div class="gallery-item"><img src="images/kapela%201.jpg" alt="Kapela"></div>
+          <div class="gallery-item"><img src="images/Dianka%20fest.JPG" alt="Dianka fest"></div>
         </div>
       </div>
     </section>
@@ -431,7 +443,7 @@
         <div class="contact-links">
           <a href="mailto:marekstoll@seznam.cz">marekstoll@seznam.cz</a>
           <a href="tel:+420777576608">777 576 608</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.instagram.com/nouzovejstav_official/" target="_blank" rel="noreferrer">Instagram</a>
         </div>
       </div>
     </section>
